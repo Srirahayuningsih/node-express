@@ -1,0 +1,21 @@
+body {
+	font-family: sans-serif;
+	margin: 15%;
+	background-color: #00ffff
+}
+
+.input-group {
+	margin-bottom: 5px
+}
+
+footer{
+   	bottom: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height:50px;
+    line-height:50px;
+    background:#3c3a3a;
+    color:#fff;
+    padding-left: 10px;
+}

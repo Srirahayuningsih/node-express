@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<%- include('../components/navbar') %>
+	<a href="/users/create">Register</a>
+<h1>Daftar user (<%=users.length %>)</h1>
+<ul>
+	<% if(users.length > 0) { %>
+	<% users.forEach( function(user) { %>
+	<li><a href="/users/<%=user.id %>">
+	<%=user.name.toUpperCase() %></a></li>
+
+	<% }) %>
+	<% } else { %>
+		<p>Data User Kosong.</p>
+
+	<%  } %>
+</ul>
+<hr>
+<footer>
+	
+	<p>&copy; 2021 Programming.Sri Rahayu Ningsih</p>
+	<hr>
+</footer>
+
+</body>
+</html>
